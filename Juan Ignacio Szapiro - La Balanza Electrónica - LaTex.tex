@@ -84,7 +84,11 @@
 \usepackage[autostyle,spanish=mexican,thresholdtype=words,threshold=39,csdisplay=true]{csquotes}
 
 % Comando para cambiar el indentado de las citas largas 
-\renewenvironment{quote}{\list{}{\leftmargin=1cm\rightmargin=0cm}\item\relax}{\endlist}
+\renewenvironment{quote}{\list{}{\leftmargin=1.5cm\rightmargin=0cm}\item\relax}{\endlist}
+
+\renewenvironment{abstract}{\list{}{\leftmargin=1.5cm\rightmargin=0cm}\item\relax}{\endlist}
+
+\renewenvironment{keyword}{\list{}{\leftmargin=1.5cm\rightmargin=0cm}\item\relax}{\endlist}
 
 % Comando para usar el paquete biblatex y así poder administrar fuentes bibliográficas
 \usepackage[backend=biber,style=apa]{biblatex}
@@ -117,6 +121,7 @@
         \hspace{1.5cm}
     \end{center}
     
+   
     \renewcommand{\abstractname}{\vspace{-\baselineskip}}
     \begin{abstract}\noindent{
     El presente texto informativo surge en base a las pautas establecidas en la carrera Informática Aplicada de UTN-INSPT, materia Sistemas de Computación I, dictada por el Profesor Diego Corsi. En el mismo se abarca información general de la balanza electrónica como periférico de PC, considerando su definición, tipos de conexión, diferentes softwares, etc. con el fin de generar una recopilación de datos a falta de la existencia previa de uno.}
@@ -125,8 +130,10 @@
     \hspace{1.5cm}
     \end{abstract}
     
+    \begin{keyword}
     \fontsize{10pt}{10pt}{\textit{Palabras clave:} balanza electrónica, balanza digital, conexión, datos.}
-
+    \end{keyword}
+    
     \section{Definición}
         {\noindent {FEMTO (s.f.) define la balanza electrónica como:} }
         \begin{quote}
